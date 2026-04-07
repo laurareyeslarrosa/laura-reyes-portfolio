@@ -1,1 +1,99 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  /* Colors */
+  --color-bg: #ffffff;
+  --color-text: #0f172a;
+  --color-primary: #6366f1;
+  --color-secondary: #22c55e;
+  --color-muted: #64748b;
+  --color-border: #e2e8f0;
+
+  /* Spacing */
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 32px;
+  --space-xl: 64px;
+
+  /* Typography */
+  --font-main: 'Inter', sans-serif;
+  --text-sm: 0.875rem;
+  --text-md: 1rem;
+  --text-lg: 1.25rem;
+  --text-xl: 2rem;
+  --text-xxl: 3rem;
+
+  /* Radius */
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+}
+
+/* 🌗 DARK MODE */
+body[data-theme='dark'] {
+  --color-bg: #0f172a;
+  --color-text: #f1f5f9;
+  --color-border: #1e293b;
+}
+
+/* =========================
+   🧼 RESET + BASE
+========================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-main);
+  background: var(--color-bg);
+  color: var(--color-text);
+  transition: all 0.3s ease;
+}
+
+/* =========================
+   📦 LAYOUT
+========================= */
+
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: var(--space-lg) var(--space-md);
+}
+
+/* =========================
+   🧩 UTILITIES
+========================= */
+
+.section {
+  margin-bottom: var(--space-xl);
+}
+
+.title {
+  font-size: var(--text-xl);
+  margin-bottom: var(--space-md);
+}
+
+.text-muted {
+  color: var(--color-muted);
+}
+
+/* =========================
+   ✨ MICROINTERACTIONS
+========================= */
+
+button {
+  cursor: pointer;
+  border: none;
+  padding: var(--space-sm) var(--space-md);
+  border-radius: var(--radius-md);
+  background: var(--color-primary);
+  color: white;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}

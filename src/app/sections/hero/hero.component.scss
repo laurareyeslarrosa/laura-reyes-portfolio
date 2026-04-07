@@ -1,0 +1,48 @@
+.hero {
+  display: flex;
+  align-items: center;
+  min-height: 70vh;
+}
+
+.hero-content {
+  max-width: 600px;
+  animation: fadeIn 0.8s ease;
+}
+
+h1 {
+  font-size: var(--text-xxl);
+  margin-bottom: var(--space-md);
+}
+
+.highlight {
+  color: var(--color-primary);
+}
+
+.subtitle {
+  font-size: var(--text-lg);
+  color: var(--color-muted);
+  margin-bottom: var(--space-lg);
+  line-height: 1.6;
+}
+
+.actions {
+  display: flex;
+  gap: var(--space-md);
+}
+
+button.secondary {
+  background: transparent;
+  border: 1px solid var(--color-border);
+  color: var(--color-text);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
