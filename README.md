@@ -1,4 +1,4 @@
-# LauraReyesPortfolio
+# Portfolio Laura Reyes
 
 Personal portfolio built with Angular.
 
