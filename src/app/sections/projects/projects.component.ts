@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrl: './projects.component.scss'
 })
 export class ProjectsComponent {
-
+  projects = ['Project 1', 'Project 2'];
 }
