@@ -1,8 +1,23 @@
 :root {
---background:
---surface:
---text-primary:
---text-secondary:
---border:var(--background)
---accent:
+    --background: #F7F2EB;
+    --surface: #FFFFFF;
+    --surface-alt: #F4ECE4;
+
+    --text: #2E2E2E;
+    --text-muted: #666666;
+
+    --primary: #C86A4A;
+    --primary-hover: #A55239;
+
+    --border: rgba(0,0,0,.08);
+
+    --glass-bg: rgba(255,255,255,.55);
+    --glass-border: rgba(255,255,255,.40);
+
+    --shadow-sm: 0 4px 12px rgba(0,0,0,.08);
+    --shadow-lg: 0 16px 40px rgba(0,0,0,.12);
+
+    --radius-sm: 8px;
+    --radius-md: 16px;
+    --radius-lg: 24px;
 }

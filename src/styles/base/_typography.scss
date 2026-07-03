@@ -1,0 +1,55 @@
+@use '../abstracts/typography';
+
+/* ============================================
+   TYPOGRAPHY
+============================================ */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: typography.$font-heading;
+    color: var(--text);
+    line-height: typography.$lh-tight;
+    font-weight: typography.$fw-bold;
+}
+
+h1 {
+    font-size: typography.$fs-5xl;
+}
+
+h2 {
+    font-size: typography.$fs-4xl;
+}
+
+h3 {
+    font-size: typography.$fs-3xl;
+}
+
+h4 {
+    font-size: typography.$fs-2xl;
+}
+
+h5 {
+    font-size: typography.$fs-xl;
+}
+
+h6 {
+    font-size: typography.$fs-lg;
+}
+
+p {
+    font-size: typography.$fs-md;
+    color: var(--text-muted);
+    line-height: typography.$lh-loose;
+}
+
+small {
+    font-size: typography.$fs-sm;
+}
+
+strong {
+    font-weight: typography.$fw-semibold;
+}

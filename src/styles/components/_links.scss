@@ -1,0 +1,24 @@
+.link{
+    position:relative;
+    display:inline-flex;
+    align-items:center;
+    gap:.3rem;
+    color:var(--primary);
+    font-weight:500;
+    transition:.25s;
+}
+
+.link::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-4px;
+    width:0;
+    height:2px;
+    background:currentColor;
+    transition:.3s;
+}
+
+.link:hover::after{
+    width:100%;
+}

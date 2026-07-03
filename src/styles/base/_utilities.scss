@@ -1,0 +1,54 @@
+@use '../abstracts/spacing';
+
+/* ============================================
+   UTILITIES
+============================================ */
+
+.container {
+    width: min(1200px, calc(100% - 2rem));
+    margin-inline: auto;
+}
+
+.section-header {
+    display: flex;
+    flex-direction: column;
+    gap: .75rem;
+    margin-bottom: 4rem;
+}
+
+.section-title {
+    margin-bottom: spacing.$space-4;
+}
+
+.section-subtitle {
+    margin-bottom: spacing.$space-8;
+    max-width: 700px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.mt-auto {
+    margin-top: auto;
+}
+
+.mb-0 {
+    margin-bottom: 0;
+}

@@ -1,0 +1,21 @@
+// I wont use this file for now, but I will keep it for future reference. I will use the _utilities.scss file instead.
+
+.input{
+    width:100%;
+    padding:1rem;
+    border-radius:18px;
+    border:1px solid var(--border);
+    background:var(--surface);
+    color:var(--text);
+    transition:.25s;
+}
+
+.input:focus{
+    border-color:var(--primary);
+    box-shadow:0 0 0 4px rgba(236,123,92,.15);
+}
+
+.textarea{
+    min-height:180px;
+    resize:vertical;
+}

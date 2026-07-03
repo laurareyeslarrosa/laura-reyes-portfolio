@@ -1,8 +1,19 @@
-:root {
---background:
---surface:
---text-primary:
---text-secondary:
---border:var(--background)
---accent:
+[data-theme="night"] {
+    --background: #1C1C1F;
+    --surface: #26262B;
+    --surface-alt: #303038;
+
+    --text: #F6F4F1;
+    --text-muted: #C7C7C7;
+
+    --primary: #D98263;
+    --primary-hover: #E59A7B;
+
+    --border: rgba(255,255,255,.08);
+
+    --glass-bg: rgba(30,30,35,.55);
+    --glass-border: rgba(255,255,255,.08);
+
+    --shadow-sm: 0 4px 12px rgba(0,0,0,.35);
+    --shadow-lg: 0 20px 45px rgba(0,0,0,.45);
 }
