@@ -9,7 +9,7 @@ import { ThemeService } from './core/services/theme.service';
   template: `<router-outlet />`
 })
 export class AppComponent {
-  constructor(private theme: ThemeService) {
-    this.theme.initTheme();
+  constructor(private themeService: ThemeService) {
+    this.themeService.initTheme();
   }
 }

@@ -1,23 +1,68 @@
+/* ============================================
+   SUNSET THEME
+============================================ */
+
 :root {
+
+    /* Backgrounds */
+
     --background: #F7F2EB;
     --surface: #FFFFFF;
-    --surface-alt: #F4ECE4;
+    --surface-alt: #F2E8DD;
 
-    --text: #2E2E2E;
-    --text-muted: #666666;
+    /* Text */
+
+    --text: #2F2A28;
+    --text-muted: #6B625C;
+
+    /* Brand */
 
     --primary: #C86A4A;
-    --primary-hover: #A55239;
+    --primary-hover: #B35A3E;
+
+    --secondary: #D28A93;
+
+    /* Borders */
 
     --border: rgba(0,0,0,.08);
+
+    /* Cards */
+
+    --card-bg: #FFFFFF;
+
+    /* Buttons */
+
+    --button-primary-bg: var(--primary);
+    --button-primary-text: #FFFFFF;
+
+    --button-secondary-bg: transparent;
+    --button-secondary-text: var(--text);
+
+    /* Links */
+
+    --link: var(--primary);
+
+    /* Glass */
 
     --glass-bg: rgba(255,255,255,.55);
     --glass-border: rgba(255,255,255,.40);
 
-    --shadow-sm: 0 4px 12px rgba(0,0,0,.08);
-    --shadow-lg: 0 16px 40px rgba(0,0,0,.12);
+    /* Radius */
 
     --radius-sm: 8px;
     --radius-md: 16px;
     --radius-lg: 24px;
+    --radius-xl: 32px;
+
+    /* Shadows */
+
+    --shadow-sm:
+        0 4px 12px rgba(0,0,0,.08);
+
+    --shadow-md:
+        0 10px 25px rgba(0,0,0,.10);
+
+    --shadow-lg:
+        0 20px 45px rgba(0,0,0,.15);
+
 }

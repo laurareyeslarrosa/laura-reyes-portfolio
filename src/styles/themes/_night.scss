@@ -1,19 +1,68 @@
-[data-theme="night"] {
-    --background: #1C1C1F;
-    --surface: #26262B;
-    --surface-alt: #303038;
+/* ============================================
+   NIGHT THEME
+============================================ */
 
-    --text: #F6F4F1;
-    --text-muted: #C7C7C7;
+[data-theme="night"] {
+
+    /* Backgrounds */
+
+    --background: #1E1C1B;
+    --surface: #292523;
+    --surface-alt: #35302E;
+
+    /* Text */
+
+    --text: #F8F5F2;
+    --text-muted: #C9C2BC;
+
+    /* Brand */
 
     --primary: #D98263;
-    --primary-hover: #E59A7B;
+    --primary-hover: #E49A81;
+
+    --secondary: #D8A3AA;
+
+    /* Borders */
 
     --border: rgba(255,255,255,.08);
+
+    /* Cards */
+
+    --card-bg: #292523;
+
+    /* Buttons */
+
+    --button-primary-bg: var(--primary);
+    --button-primary-text: #FFFFFF;
+
+    --button-secondary-bg: transparent;
+    --button-secondary-text: var(--text);
+
+    /* Links */
+
+    --link: var(--primary);
+
+    /* Glass */
 
     --glass-bg: rgba(30,30,35,.55);
     --glass-border: rgba(255,255,255,.08);
 
-    --shadow-sm: 0 4px 12px rgba(0,0,0,.35);
-    --shadow-lg: 0 20px 45px rgba(0,0,0,.45);
+    /* Radius */
+
+    --radius-sm: 8px;
+    --radius-md: 16px;
+    --radius-lg: 24px;
+    --radius-xl: 32px;
+
+    /* Shadows */
+
+    --shadow-sm:
+        0 4px 12px rgba(0,0,0,.30);
+
+    --shadow-md:
+        0 12px 30px rgba(0,0,0,.40);
+
+    --shadow-lg:
+        0 24px 55px rgba(0,0,0,.55);
+
 }
