@@ -1,15 +1,12 @@
-html
+body {
+    font-family: typography.$font-primary;
+}
 
-body
-
-a
-
-img
-
-button
-
-input
-
-::selection{}
-
-scroll-behavior{scroll-behavior: smooth;}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-family: typography.$font-heading;
+}

@@ -1,10 +1,10 @@
 import { Routes } from '@angular/router';
-import { ContainerComponent } from './shared/components/container/container.component';
+import { PageComponent } from './layout/page/page.component';
 
 export const routes: Routes = [
   {
     path: '',
-    component: ContainerComponent
+    component: PageComponent
   },
   {
     path: '**',

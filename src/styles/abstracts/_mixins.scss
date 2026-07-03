@@ -1,11 +1,58 @@
-@include mobile {}
+@use './breakpoints' as bp;
 
-@include tablet {}
+/* ============================================
+   RESPONSIVE
+============================================ */
 
-@include laptop {}
+@mixin mobile {
+    @media(max-width:bp.$mobile){
+        @content;
+    }
+}
 
-@include desktop {}
+@mixin tablet {
+    @media(max-width:bp.$tablet){
+        @content;
+    }
+}
 
-@include hover {}
+@mixin laptop {
+    @media(max-width:bp.$laptop){
+        @content;
+    }
+}
 
-@include reduced-motion {}
+@mixin desktop {
+    @media(max-width:bp.$desktop){
+        @content;
+    }
+}
+
+/* ============================================
+   FLEX
+============================================ */
+
+@mixin flex-center{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+@mixin flex-between{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+/* ============================================
+   TRANSITIONS
+============================================ */
+
+@mixin transition{
+    transition:.3s ease;
+}
+
+@mixin card-shadow{
+    box-shadow:
+        0 8px 30px rgba(0,0,0,.08);
+}
