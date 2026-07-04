@@ -1,7 +1,6 @@
 @use '../../../styles/abstracts/mixins' as mixins;
 
 .hero {
-
     display: flex;
     align-items: center;
     min-height: calc(100vh - 80px);
