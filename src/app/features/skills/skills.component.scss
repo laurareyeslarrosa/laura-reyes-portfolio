@@ -1,5 +1,79 @@
-div.grid {
+@use '../../../styles/abstracts/mixins' as mixins;
+
+.skills__grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-top: 4rem;
+}
+
+.skills__card {
+    position: relative;
+    overflow: hidden;
+    padding: 2rem;
+}
+
+.skills__card::before {
+    content: "";
+    position: absolute;
+    inset: 0 auto auto 0;
+    width: 100%;
+    height: 6px;
+    background: var(--card-accent);
+}
+
+.skills__card h3 {
+    margin-bottom: 1rem;
+}
+
+.skills__card p {
+    margin-bottom: 2rem;
+    color: var(--text-muted);
+    line-height: 1.8;
+}
+
+.skills__chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .75rem;
+}
+
+.skills__mindset {
+    margin-top: 5rem;
+    text-align: center;
+}
+
+.skills__mindset h3 {
+    margin-bottom: 2rem;
+}
+
+.skills__principles {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 1rem;
+}
+
+.skills__card--frontend {
+    --card-accent: #C86A4A;
+}
+
+.skills__card--backend {
+    --card-accent: #D58A8A;
+}
+
+.skills__card--cloud {
+    --card-accent: #D6B27A;
+}
+
+.skills__card--database {
+    --card-accent: #876A86;
+}
+
+@include mixins.tablet {
+
+    .skills__grid {
+        grid-template-columns: 1fr;
+    }
+
 }
