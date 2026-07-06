@@ -1,6 +1,65 @@
-<section class="projects section">
-    <h2>Projects</h2>
-     @for (p of projects; track p) {
-        <div>{{ p }}</div>
-    }
+<section id="projects" class="section projects">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-eyebrow">
+                Proyectos
+            </span>
+            <h2 class="section-title">
+                Algunas cosas que construí.
+            </h2>
+            <p class="section-subtitle">
+                Cada proyecto representa un problema distinto, una solución diferente y mucho aprendizaje.
+            </p>
+        </div>
+        <div class="projects__grid">
+            <article class="card project">
+                <div class="project__image">
+                    Portfolio
+                </div>
+                <div class="project__body">
+                    <h3>Portfolio Personal</h3>
+                    <p>
+                        Portfolio desarrollado desde cero utilizando Angular,
+                        Design System propio, Theme Engine e internacionalización.
+                    </p>
+                    <div class="project__stack">
+                        <span class="chip">Angular</span>
+                        <span class="chip">SCSS</span>
+                        <span class="chip">TypeScript</span>
+                    </div>
+                    <div class="project__links">
+                        <a class="link" href="#">
+                            Demo
+                        </a>
+                        <a class="link" href="#">
+                            GitHub
+                        </a>
+                    </div>
+                </div>
+            </article>
+            <article class="card project">
+                <div class="project__image">
+                    Proyecto
+                </div>
+                <div class="project__body">
+                    <h3>Otro Proyecto</h3>
+                    <p>
+                        Descripción breve del proyecto, qué problema resolvía y las tecnologías utilizadas.
+                    </p>
+                    <div class="project__stack">
+                        <span class="chip">Angular</span>
+                        <span class="chip">.NET</span>
+                    </div>
+                    <div class="project__links">
+                        <a class="link" href="#">
+                            Demo
+                        </a>
+                        <a class="link" href="#">
+                            GitHub
+                        </a>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </div>
 </section>

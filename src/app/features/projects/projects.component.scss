@@ -1,0 +1,55 @@
+@use '../../../styles/abstracts/mixins' as mixins;
+
+.projects__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    gap: 2rem;
+    margin-top: 4rem;
+}
+
+.project {
+    overflow: hidden;
+    transition: .35s;
+}
+
+.project:hover {
+    transform: translateY(-8px);
+}
+
+.project__image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 220px;
+    background: linear-gradient(
+        135deg,
+        var(--primary),
+        var(--secondary)
+    );
+    color: white;
+    font-size: 2rem;
+    font-family: var(--font-heading);
+}
+
+.project__body {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2rem;
+}
+
+.project__body p {
+    color: var(--text-muted);
+    line-height: 1.8;
+}
+
+.project__stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .75rem;
+}
+
+.project__links {
+    display: flex;
+    gap: 1.5rem;
+}
