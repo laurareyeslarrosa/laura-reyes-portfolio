@@ -8,40 +8,30 @@
       </p>
     </div>
     <div class="projects__grid">
-      <article class="card project">
-        <div class="project__image">Portfolio</div>
+      <article class="card project" *ngFor="let project of projects">
+        <div class="project__image"></div>
         <div class="project__body">
-          <h3>Portfolio Personal</h3>
+          <h3>{{ project.title }}</h3>
           <p>
-            Portfolio desarrollado desde cero utilizando Angular, Design System
-            propio, Theme Engine e internacionalización.
+            {{ project.description[currentLang()] }}
           </p>
           <div class="project__stack">
-            <span class="chip">Angular</span>
-            <span class="chip">SCSS</span>
-            <span class="chip">TypeScript</span>
+            <span class="chip" *ngFor="let tech of project.stack">{{
+              tech
+            }}</span>
           </div>
           <div class="project__links">
-            <a class="link" href="#"> Demo </a>
-            <a class="link" href="#"> GitHub </a>
-          </div>
-        </div>
-      </article>
-      <article class="card project">
-        <div class="project__image">Proyecto</div>
-        <div class="project__body">
-          <h3>Otro Proyecto</h3>
-          <p>
-            Descripción breve del proyecto, qué problema resolvía y las
-            tecnologías utilizadas.
-          </p>
-          <div class="project__stack">
-            <span class="chip">Angular</span>
-            <span class="chip">.NET</span>
-          </div>
-          <div class="project__links">
-            <a class="link" href="#"> Demo </a>
-            <a class="link" href="#"> GitHub </a>
+            <a
+              *ngIf="project.demoLink"
+              class="link"
+              [href]="project.demoLink"
+              target="_blank"
+            >
+              Demo
+            </a>
+            <a class="link" [href]="project.githubLink" target="_blank">
+              GitHub
+            </a>
           </div>
         </div>
       </article>
