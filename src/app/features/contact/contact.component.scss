@@ -1,16 +1,20 @@
 .contact {
-    text-align: center;
+  text-align: center;
 }
 
 .contact__box {
-    max-width: 800px;
-    margin: 0 auto;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .contact__actions {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 1rem;
-    margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 3rem;
+}
+
+.contact__note {
+  margin-top: 1rem;
 }

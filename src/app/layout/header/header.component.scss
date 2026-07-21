@@ -1,48 +1,67 @@
-.hero {
+.header {
+  position: fixed;
+  background: var(--surface);
+  border-bottom: 1px solid calc(var(--border));
+  width: 100vw;
+  height: 72px;
   display: flex;
   align-items: center;
-  min-height: 70vh;
-}
+  justify-content: space-between;
+  padding: 0 28px;
+  backdrop-filter: blur(20px);
+  z-index: 1000;
+  opacity: 0.95;
 
-.hero-content {
-  max-width: 600px;
-  animation: fadeIn 0.8s ease;
-}
+  .header__logo {
+    font-size: 28px;
+    font-family: "Caveat";
+    color: var(--primary);
+    font-weight: 700;
 
-h1 {
-  font-size: var(--text-xxl);
-  margin-bottom: var(--space-md);
-}
-
-.highlight {
-  color: var(--color-primary);
-}
-
-.subtitle {
-  font-size: var(--text-lg);
-  color: var(--color-muted);
-  margin-bottom: var(--space-lg);
-  line-height: 1.6;
-}
-
-.actions {
-  display: flex;
-  gap: var(--space-md);
-}
-
-button.secondary {
-  background: transparent;
-  border: 1px solid var(--color-border);
-  color: var(--color-text);
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(10px);
+    img {
+      opacity: 0.8;
+      width: 110px;
+      height: 72px;
+    }
   }
-  to {
-    opacity: 1;
-    transform: translateY(0);
+
+  nav {
+    display: flex;
+    gap: 36px;
+  }
+
+  nav a {
+    position: relative;
+    text-decoration: none;
+    color: var(--text);
+    font-weight: 500;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+
+  nav a:hover {
+    color: #f28b6a;
+  }
+
+  nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 0;
+    height: 2px;
+    background: #f28b6a;
+    transition: 0.3s;
+  }
+
+  nav a:hover::after,
+  nav a.active::after {
+    width: 100%;
+  }
+
+  .header__actions {
+    display: flex;
+    gap: 0.7rem;
+    margin-right: 0.5rem;
   }
 }

@@ -1,54 +1,53 @@
-@use '../abstracts/spacing';
+@use "../abstracts/spacing";
 
 /* ============================================
    UTILITIES
 ============================================ */
 
 .container {
-    width: min(1200px, calc(100% - 2rem));
-    margin-inline: auto;
+  width: min(1200px, calc(100% - 2rem));
+  margin-inline: auto;
 }
 
 .section-header {
-    display: flex;
-    flex-direction: column;
-    gap: .75rem;
-    margin-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 4rem;
 }
 
 .section-title {
-    margin-bottom: spacing.$space-4;
+  margin-bottom: spacing.$space-4;
 }
 
 .section-subtitle {
-    margin-bottom: spacing.$space-8;
-    max-width: 700px;
+  margin-bottom: spacing.$space-8;
 }
 
 .text-center {
-    text-align: center;
+  text-align: center;
 }
 
 .text-left {
-    text-align: left;
+  text-align: left;
 }
 
 .text-right {
-    text-align: right;
+  text-align: right;
 }
 
 .w-100 {
-    width: 100%;
+  width: 100%;
 }
 
 .hidden {
-    display: none !important;
+  display: none !important;
 }
 
 .mt-auto {
-    margin-top: auto;
+  margin-top: auto;
 }
 
 .mb-0 {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
