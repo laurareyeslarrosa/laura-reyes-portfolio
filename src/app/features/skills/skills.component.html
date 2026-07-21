@@ -1,18 +1,16 @@
 <section id="skills" class="section skills">
   <div class="container">
     <div class="section-header">
-      <h2 class="section-title">Así me gusta construir software.</h2>
+      <h2 class="section-title">{{ skillsContent().title }}</h2>
       <p class="section-subtitle">
-        Las tecnologías cambian constantemente. La forma de pensar una
-        aplicación es lo que permanece.
+        {{ skillsContent().subtitle }}
       </p>
     </div>
     <div class="skills__grid">
       <div class="card skills__card skills__card--frontend">
-        <h3>🖥 Frontend</h3>
+        <h3>{{ skillsContent().frontendTitle }}</h3>
         <p>
-          Interfaces modernas, arquitectura escalable y una experiencia de
-          usuario cuidada hasta el último detalle.
+          {{ skillsContent().frontendDescription }}
         </p>
         <div class="skills__chips">
           <span class="chip">Angular</span>
@@ -24,9 +22,9 @@
         </div>
       </div>
       <div class="card skills__card skills__card--backend">
-        <h3>⚙️ Backend</h3>
+        <h3>{{ skillsContent().backendTitle }}</h3>
         <p>
-          APIs limpias, código mantenible y arquitecturas fáciles de extender.
+          {{ skillsContent().backendDescription }}
         </p>
         <div class="skills__chips">
           <span class="chip">.NET</span>
@@ -36,10 +34,9 @@
         </div>
       </div>
       <div class="card skills__card skills__card--cloud">
-        <h3>☁️ Cloud & DevOps</h3>
+        <h3>{{ skillsContent().cloudTitle }}</h3>
         <p>
-          Automatizar procesos y desplegar aplicaciones también forma parte del
-          desarrollo moderno.
+          {{ skillsContent().cloudDescription }}
         </p>
         <div class="skills__chips">
           <span class="chip">AWS</span>
@@ -48,10 +45,9 @@
         </div>
       </div>
       <div class="card skills__card skills__card--database">
-        <h3>🗄 Bases de datos</h3>
+        <h3>{{ skillsContent().databaseTitle }}</h3>
         <p>
-          Modelado simple, consultas eficientes y estructuras fáciles de
-          mantener.
+          {{ skillsContent().databaseDescription }}
         </p>
         <div class="skills__chips">
           <span class="chip">SQL Server</span>
@@ -61,16 +57,16 @@
       </div>
     </div>
     <div class="skills__mindset">
-      <h3>Más allá de las tecnologías...</h3>
+      <h3>{{ skillsContent().mindsetTitle }}</h3>
       <div class="skills__principles">
-        <span class="badge">Código limpio</span>
-        <span class="badge">Arquitectura</span>
-        <span class="badge">UI / UX</span>
-        <span class="badge">Accesibilidad</span>
-        <span class="badge">Performance</span>
-        <span class="badge">Responsive</span>
-        <span class="badge">Aprendizaje continuo</span>
-        <span class="badge">Trabajo en equipo</span>
+        <span class="badge">{{ skillsContent().principle1 }}</span>
+        <span class="badge">{{ skillsContent().principle2 }}</span>
+        <span class="badge">{{ skillsContent().principle3 }}</span>
+        <span class="badge">{{ skillsContent().principle4 }}</span>
+        <span class="badge">{{ skillsContent().principle5 }}</span>
+        <span class="badge">{{ skillsContent().principle6 }}</span>
+        <span class="badge">{{ skillsContent().principle7 }}</span>
+        <span class="badge">{{ skillsContent().principle8 }}</span>
       </div>
     </div>
   </div>

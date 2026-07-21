@@ -3,10 +3,10 @@
     <img src="assets/images/hero/photo_background.png" alt="Lau.dev Logo" />
   </div>
   <nav class="header__nav">
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
+    <a href="#about">{{ headerContent().about }}</a>
+    <a href="#skills">{{ headerContent().skills }}</a>
+    <a href="#projects">{{ headerContent().projects }}</a>
+    <a href="#contact">{{ headerContent().contact }}</a>
   </nav>
 
   <div class="header__actions">
@@ -18,7 +18,12 @@
       }
     </button>
 
-    <button class="header__lang" (click)="changeLanguage()">
+    <button
+      class="header__lang"
+      (click)="changeLanguage()"
+      [attr.aria-label]="headerContent().language + ' - ' + headerContent().switchTo"
+      [title]="headerContent().switchTo"
+    >
       {{ currentLang().toUpperCase() }}
     </button>
   </div>

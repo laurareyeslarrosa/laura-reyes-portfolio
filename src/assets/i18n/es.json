@@ -1,1 +1,71 @@
-{}
+{
+  "hero": {
+    "greeting": "Hola!",
+    "nameIntro": "Mi nombre es",
+    "name": "Laura",
+    "subtitle": "Full Stack Developer",
+    "subtitleAlt": "Frontend Specialist",
+    "description": "Me apasiona construir aplicaciones modernas donde la arquitectura, la experiencia de usuario y el diseño tengan la misma importancia. Disfruto transformar ideas en productos limpios, accesibles y agradables de utilizar.",
+    "contact": "Contáctame",
+    "projects": "Ver mis proyectos"
+  },
+  "about": {
+    "title": "El software es mi profesión. La curiosidad es mi motor.",
+    "subtitle": "Más que escribir código, disfruto construir experiencias que sean claras, mantenibles y agradables de utilizar.",
+    "card1Title": "Cómo llegué hasta acá",
+    "card1P1": "Empecé programando por curiosidad y terminé enamorándome de la capacidad que tiene el software para resolver problemas reales.",
+    "card1P2": "Con el tiempo descubrí que disfruto especialmente el frontend, donde puedo combinar arquitectura, lógica y diseño para crear productos que realmente se sientan bien de usar.",
+    "card1P3": "Hoy sigo aprendiendo todos los días porque creo que nunca dejamos de mejorar como desarrolladores.",
+    "card2Title": "Un poco sobre mí",
+    "list1": "💻 Full Stack Developer",
+    "list2": "🎨 Enamorada del Frontend",
+    "list3": "☁️ Aprendiendo AWS",
+    "list4": "🏋️ Gimnasio",
+    "list5": "🌅 Fanática de la rambla",
+    "list6": "🎮 Videojuegos",
+    "list7": "🐱 Cat person"
+  },
+  "skills": {
+    "title": "Así me gusta construir software.",
+    "subtitle": "Las tecnologías cambian constantemente. La forma de pensar una aplicación es lo que permanece.",
+    "frontendTitle": "🖥 Frontend",
+    "frontendDescription": "Interfaces modernas, arquitectura escalable y una experiencia de usuario cuidada hasta el último detalle.",
+    "backendTitle": "⚙️ Backend",
+    "backendDescription": "APIs limpias, código mantenible y arquitecturas fáciles de extender.",
+    "cloudTitle": "☁️ Cloud & DevOps",
+    "cloudDescription": "Automatizar procesos y desplegar aplicaciones también forma parte del desarrollo moderno.",
+    "databaseTitle": "🗄 Bases de datos",
+    "databaseDescription": "Modelado simple, consultas eficientes y estructuras fáciles de mantener.",
+    "mindsetTitle": "Más allá de las tecnologías...",
+    "principle1": "Código limpio",
+    "principle2": "Arquitectura",
+    "principle3": "UI / UX",
+    "principle4": "Accesibilidad",
+    "principle5": "Performance",
+    "principle6": "Responsive",
+    "principle7": "Aprendizaje continuo",
+    "principle8": "Trabajo en equipo"
+  },
+  "projects": {
+    "title": "Algunas cosas que construí.",
+    "subtitle": "Cada proyecto representa un problema distinto, una solución diferente y mucho aprendizaje.",
+    "demo": "Demo",
+    "github": "GitHub"
+  },
+  "contact": {
+    "title": "¿Construimos algo juntos?",
+    "subtitle": "Siempre estoy abierta a conversar sobre nuevos proyectos, oportunidades laborales o simplemente hablar de tecnología.",
+    "email": "Enviarme un correo",
+    "linkedin": "LinkedIn",
+    "github": "GitHub",
+    "note": "Gracias por llegar hasta acá. Este portfolio fue diseñado y desarrollado desde cero con Angular, TypeScript, SASS y mucho (demasiado) mate. Espero que hayas disfrutado recorrerlo tanto como yo disfruté construirlo."
+  },
+  "header": {
+    "about": "Sobre mí",
+    "skills": "Habilidades",
+    "projects": "Proyectos",
+    "contact": "Contacto",
+    "language": "Idioma",
+    "switchTo": "Cambiar a inglés"
+  }
+}

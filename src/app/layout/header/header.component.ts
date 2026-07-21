@@ -1,4 +1,4 @@
-import { Component, signal } from '@angular/core';
+import { Component, computed, inject, signal } from '@angular/core';
 import { ThemeService } from '../../core/services/theme.service';
 import { I18nService } from '../../core/services/i18n.service';
 
@@ -10,16 +10,12 @@ import { I18nService } from '../../core/services/i18n.service';
   styleUrl: './header.component.scss',
 })
 export class HeaderComponent {
-  readonly isDark = signal(false);
-  readonly currentLang = signal<'en' | 'es'>('en');
+  private readonly themeService = inject(ThemeService);
+  private readonly i18n = inject(I18nService);
 
-  constructor(
-    private readonly themeService: ThemeService,
-    private readonly i18n: I18nService,
-  ) {
-    this.isDark.set(this.themeService.isDark());
-    this.currentLang.set(this.i18n.getLang());
-  }
+  readonly isDark = signal(this.themeService.isDark());
+  readonly currentLang = this.i18n.lang;
+  readonly headerContent = computed(() => this.i18n.dictionary().header);
 
   toggleTheme(): void {
     this.themeService.toggle();
@@ -27,8 +23,6 @@ export class HeaderComponent {
   }
 
   changeLanguage(): void {
-    const next = this.currentLang() === 'es' ? 'en' : 'es';
-    this.i18n.setLang(next);
-    this.currentLang.set(next);
+    this.i18n.setLang(this.currentLang() === 'es' ? 'en' : 'es');
   }
 }

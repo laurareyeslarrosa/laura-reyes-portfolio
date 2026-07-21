@@ -1,10 +1,9 @@
 <section id="projects" class="section projects">
   <div class="container">
     <div class="section-header">
-      <h2 class="section-title">Algunas cosas que construí.</h2>
+      <h2 class="section-title">{{ projectsContent().title }}</h2>
       <p class="section-subtitle">
-        Cada proyecto representa un problema distinto, una solución diferente y
-        mucho aprendizaje.
+        {{ projectsContent().subtitle }}
       </p>
     </div>
     <div class="projects__grid">
@@ -27,10 +26,10 @@
               [href]="project.demoLink"
               target="_blank"
             >
-              Demo
+              {{ projectsContent().demo }}
             </a>
             <a class="link" [href]="project.githubLink" target="_blank">
-              GitHub
+              {{ projectsContent().github }}
             </a>
           </div>
         </div>

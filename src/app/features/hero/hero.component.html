@@ -1,19 +1,19 @@
 <section id="hero" class="hero">
   <div class="container hero__container">
     <div class="hero__content">
-      <span class="hero__eyebrow"> <span>Hola!</span> Mi nombre es </span>
-      <h1 class="hero__title">Laura <span>Reyes</span></h1>
+      <span class="hero__eyebrow">
+        <span>{{ heroContent().greeting }}</span>
+        {{ heroContent().nameIntro }}
+      </span>
+      <h1 class="hero__title">{{ heroContent().name }} <span>Reyes</span></h1>
       <h2 class="hero__subtitle">
-        Full Stack Developer
+        {{ heroContent().subtitle }}
         <span>•</span>
-        Frontend Specialist
+        {{ heroContent().subtitleAlt }}
       </h2>
 
       <p class="hero__description">
-        Me apasiona construir aplicaciones modernas donde la arquitectura, la
-        experiencia de usuario y el diseño tengan la misma importancia. Disfruto
-        transformar ideas en productos limpios, accesibles y agradables de
-        utilizar.
+        {{ heroContent().description }}
       </p>
 
       <div class="hero__actions">
@@ -23,10 +23,12 @@
           rel="noopener noreferrer"
           class="btn btn-primary"
         >
-          Contactame
+          {{ heroContent().contact }}
         </a>
 
-        <a href="#projects" class="btn btn-secondary"> Ver proyectos </a>
+        <a href="#projects" class="btn btn-secondary">
+          {{ heroContent().projects }}
+        </a>
       </div>
 
       <div class="hero__stack">

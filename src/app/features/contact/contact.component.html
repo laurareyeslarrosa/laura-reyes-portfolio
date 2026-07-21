@@ -1,10 +1,9 @@
 <section id="contact" class="section contact">
   <div class="container">
     <div class="contact__box">
-      <h2 class="section-title">¿Construimos algo juntos?</h2>
+      <h2 class="section-title">{{ contactContent().title }}</h2>
       <p class="section-subtitle">
-        Siempre estoy abierta a conversar sobre nuevos proyectos, oportunidades
-        laborales o simplemente hablar de tecnología.
+        {{ contactContent().subtitle }}
       </p>
       <div class="contact__actions">
         <a
@@ -13,7 +12,7 @@
           target="_blank"
           rel="noopener noreferrer"
         >
-          Enviarme un correo
+          {{ contactContent().email }}
         </a>
         <a
           class="btn btn-secondary"
@@ -21,7 +20,7 @@
           target="_blank"
           rel="noopener noreferrer"
         >
-          LinkedIn
+          {{ contactContent().linkedin }}
         </a>
         <a
           class="btn btn-secondary"
@@ -29,13 +28,11 @@
           target="_blank"
           rel="noopener noreferrer"
         >
-          GitHub
+          {{ contactContent().github }}
         </a>
       </div>
       <p class="contact__note">
-        Gracias por llegar hasta acá. Este portfolio fue diseñado y desarrollado
-        desde cero con Angular, TypeScript, SASS y mucho (demasiado) mate Espero
-        que hayas disfrutado recorrerlo tanto como yo disfruté construirlo.
+        {{ contactContent().note }}
       </p>
     </div>
   </div>
