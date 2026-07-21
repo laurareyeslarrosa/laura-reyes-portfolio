@@ -1,41 +1,46 @@
-@use '../abstracts/typography';
-@use '../abstracts/spacing';
+@use "../abstracts/typography";
+@use "../abstracts/spacing";
 
 /* ============================================
    GLOBALS
 ============================================ */
 
 html {
-    font-size: 16px;
-    scroll-behavior: smooth;
+  font-size: 16px;
+  scroll-behavior: smooth;
 }
 
 body {
-    font-family: typography.$font-primary;
-    line-height: typography.$lh-normal;
+  min-height: 100vh;
+  font-family: typography.$font-primary;
+  line-height: typography.$lh-normal;
+  background: var(--background);
+  background-image: url("../../assets/images/backgrounds/background.png");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: contain;
+  background-attachment: fixed;
+  color: var(--text);
 
-    background: var(--background);
-    color: var(--text);
+  transition:
+    background 0.35s ease,
+    color 0.35s ease;
 
-    transition:
-        background .35s ease,
-        color .35s ease;
-
-    overflow-x: hidden;
+  overflow-x: hidden;
 }
 
 main {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 section {
-    padding: spacing.$space-20 0;
-    position: relative;
-     scroll-margin-top: 100px;
+  padding: spacing.$space-20 0;
+  position: relative;
+  scroll-margin-top: 100px;
 }
 
 ::selection {
-    background: var(--primary);
-    color: white;
+  background: var(--primary);
+  color: white;
 }
