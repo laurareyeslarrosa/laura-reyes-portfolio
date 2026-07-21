@@ -1,16 +1,15 @@
-<section class="hero section">
-  <div class="hero-content">
-    <h1>
-      Hi, I'm <span class="highlight">Laura</span>
-    </h1>
+<nav class="header">
+  ...
 
-    <p class="subtitle">
-      Frontend Developer focused on building clean, responsive and user-centered interfaces.
-    </p>
+  <button class="header__theme" (click)="toggleTheme()">
+    @if (isDark()) {
+      🌙
+    } @else {
+      🌅
+    }
+  </button>
 
-    <div class="actions">
-      <button>View Projects</button>
-      <button class="secondary">Contact Me</button>
-    </div>
-  </div>
-</section>
+  <button class="header__lang" (click)="changeLanguage()">
+    {{ currentLang().toUpperCase() }}
+  </button>
+</nav>
