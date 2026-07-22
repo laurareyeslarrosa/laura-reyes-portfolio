@@ -58,6 +58,8 @@
     "email": "Send me an email",
     "linkedin": "LinkedIn",
     "github": "GitHub",
+    "cvES": "Resume (Spanish)",
+    "cvEN": "Resume (English)",
     "note": "Thanks for making it this far. This portfolio was designed and developed from scratch with Angular, TypeScript, SASS, and lots of mate. I hope you enjoyed exploring it as much as I enjoyed building it."
   },
   "header": {

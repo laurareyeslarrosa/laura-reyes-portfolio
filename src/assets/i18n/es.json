@@ -58,6 +58,8 @@
     "email": "Enviarme un correo",
     "linkedin": "LinkedIn",
     "github": "GitHub",
+    "cvES": "Currículum (Español)",
+    "cvEN": "Currículum (Inglés)",
     "note": "Gracias por llegar hasta acá. Este portfolio fue diseñado y desarrollado desde cero con Angular, TypeScript, SASS y mucho (demasiado) mate. Espero que hayas disfrutado recorrerlo tanto como yo disfruté construirlo."
   },
   "header": {
@@ -65,6 +67,8 @@
     "skills": "Habilidades",
     "projects": "Proyectos",
     "contact": "Contacto",
+    "cvES": "Currículum (Español)",
+    "cvEN": "Currículum (Inglés)",
     "language": "Idioma",
     "switchTo": "Cambiar a inglés"
   }
