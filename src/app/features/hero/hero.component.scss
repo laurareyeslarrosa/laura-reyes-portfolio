@@ -115,7 +115,6 @@
   margin-top: -180px;
 }
 
-.hero__glow,
 .hero__photo {
   position: absolute;
   background-repeat: no-repeat;
@@ -123,21 +122,10 @@
   background-size: contain;
   background-attachment: fixed;
   animation: float 6s ease-in-out infinite;
-}
-
-.hero__glow {
   width: 430px;
   height: 430px;
   border-radius: 50%;
-  background-image: url("../../../assets/images/hero/photo_background.png");
-}
-
-.hero__photo {
-  width: 275px;
-  height: 319px;
-  border-radius: 64%;
-  background-image: url("../../../assets/images/hero/photo.png");
-  top: -145px;
+  background-image: url('/assets/images/hero/photo_background.png');
 }
 
 @include mixins.tablet {
@@ -170,18 +158,12 @@
 
   .hero__visual {
     order: -1;
-    margin-top: 0px;
-  }
-
-  .hero__glow {
-    width: 280px;
-    height: 280px;
+    margin-top: 20px;
   }
 
   .hero__photo {
-    width: 150px;
-    height: 150px;
+    width: 170px;
+    height: 170px;
     top: -93px;
-    left: 76px;
   }
 }
