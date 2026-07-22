@@ -125,7 +125,7 @@
   width: 430px;
   height: 430px;
   border-radius: 50%;
-  background-image: url('/assets/images/hero/photo_background.png');
+  background-image: url("../../../assets/images/hero/photo_background.png");
 }
 
 @include mixins.tablet {
