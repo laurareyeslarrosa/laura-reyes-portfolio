@@ -2,29 +2,87 @@
   <div class="header__logo">
     <img src="assets/images/hero/photo_background.png" alt="Lau.dev Logo" />
   </div>
-  <nav class="header__nav">
-    <a href="#about">{{ headerContent().about }}</a>
-    <a href="#skills">{{ headerContent().skills }}</a>
-    <a href="#projects">{{ headerContent().projects }}</a>
-    <a href="#contact">{{ headerContent().contact }}</a>
-  </nav>
 
-  <div class="header__actions">
-    <button class="header__theme" (click)="toggleTheme()">
-      @if (isDark()) {
-        🌙
-      } @else {
-        ☀️
-      }
-    </button>
+  <div class="header__desktop">
+    <nav class="header__nav" aria-label="Primary navigation">
+      <a href="#about" (click)="closeMenu()">{{ headerContent().about }}</a>
+      <a href="#skills" (click)="closeMenu()">{{ headerContent().skills }}</a>
+      <a href="#projects" (click)="closeMenu()">{{
+        headerContent().projects
+      }}</a>
+      <a href="#contact" (click)="closeMenu()">{{ headerContent().contact }}</a>
+    </nav>
 
-    <button
-      class="header__lang"
-      (click)="changeLanguage()"
-      [attr.aria-label]="headerContent().language + ' - ' + headerContent().switchTo"
-      [title]="headerContent().switchTo"
-    >
-      {{ currentLang().toUpperCase() }}
-    </button>
+    <div class="header__actions">
+      <button class="header__theme" (click)="toggleTheme()">
+        @if (isDark()) {
+          🌙
+        } @else {
+          ☀️
+        }
+      </button>
+
+      <button
+        class="header__lang"
+        (click)="changeLanguage()"
+        [attr.aria-label]="
+          headerContent().language + ' - ' + headerContent().switchTo
+        "
+        [title]="headerContent().switchTo"
+      >
+        {{ currentLang().toUpperCase() }}
+      </button>
+    </div>
   </div>
+
+  <button
+    class="header__menu-toggle"
+    type="button"
+    (click)="toggleMenu()"
+    [attr.aria-expanded]="isMenuOpen()"
+    [attr.aria-label]="isMenuOpen() ? 'Close menu' : 'Open menu'"
+  >
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  @if (isMenuOpen()) {
+    <div class="header__mobile-menu">
+      <nav
+        class="header__nav header__nav--mobile"
+        aria-label="Mobile navigation"
+      >
+        <a href="#about" (click)="closeMenu()">{{ headerContent().about }}</a>
+        <a href="#skills" (click)="closeMenu()">{{ headerContent().skills }}</a>
+        <a href="#projects" (click)="closeMenu()">{{
+          headerContent().projects
+        }}</a>
+        <a href="#contact" (click)="closeMenu()">{{
+          headerContent().contact
+        }}</a>
+      </nav>
+
+      <div class="header__actions header__actions--mobile">
+        <button class="header__theme" (click)="toggleTheme()">
+          @if (isDark()) {
+            🌙
+          } @else {
+            ☀️
+          }
+        </button>
+
+        <button
+          class="header__lang"
+          (click)="changeLanguage()"
+          [attr.aria-label]="
+            headerContent().language + ' - ' + headerContent().switchTo
+          "
+          [title]="headerContent().switchTo"
+        >
+          {{ currentLang().toUpperCase() }}
+        </button>
+      </div>
+    </div>
+  }
 </header>

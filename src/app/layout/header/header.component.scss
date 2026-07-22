@@ -1,8 +1,12 @@
+@use "../../../styles/abstracts/mixins" as mixins;
+
 .header {
   position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   background: var(--surface);
-  border-bottom: 1px solid calc(var(--border));
-  width: 100vw;
+  border-bottom: 1px solid var(--border);
   height: 72px;
   display: flex;
   align-items: center;
@@ -12,7 +16,7 @@
   z-index: 1000;
   opacity: 0.95;
 
-  .header__logo {
+  &__logo {
     font-size: 28px;
     font-family: "Caveat";
     color: var(--primary);
@@ -25,47 +29,106 @@
     }
   }
 
-  nav {
+  &__desktop {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  &__nav {
     display: flex;
     gap: 36px;
+
+    a {
+      position: relative;
+      text-decoration: none;
+      color: var(--text);
+      font-weight: 500;
+      transition: 0.3s;
+      cursor: pointer;
+
+      &:hover,
+      &.active {
+        color: #f28b6a;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -8px;
+        width: 0;
+        height: 2px;
+        background: #f28b6a;
+        transition: 0.3s;
+      }
+
+      &:hover::after,
+      &.active::after {
+        width: 100%;
+      }
+    }
   }
 
-  nav a {
-    position: relative;
-    text-decoration: none;
-    color: var(--text);
-    font-weight: 500;
-    transition: 0.3s;
-    cursor: pointer;
-  }
-
-  nav a:hover {
-    color: #f28b6a;
-  }
-
-  nav a::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -8px;
-    width: 0;
-    height: 2px;
-    background: #f28b6a;
-    transition: 0.3s;
-  }
-
-  nav a:hover::after,
-  nav a.active::after {
-    width: 100%;
-  }
-
-  .header__actions {
+  &__actions {
     display: flex;
     gap: 0.7rem;
     margin-right: 0.5rem;
 
     button.header__lang {
       color: var(--text);
+    }
+  }
+
+  &__menu-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 0.3rem;
+    padding: 0.25rem;
+    background: transparent;
+    border: 0;
+
+    span {
+      display: block;
+      width: 24px;
+      height: 2px;
+      background: var(--text);
+      border-radius: 999px;
+      transition: 0.3s ease;
+    }
+  }
+
+  &__mobile-menu {
+    position: absolute;
+    top: 72px;
+    left: 0;
+    right: 0;
+    padding: 1.25rem 1.5rem 1.5rem;
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  &__nav--mobile {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  &__actions--mobile {
+    margin-right: 0;
+  }
+
+  @include mixins.tablet {
+    padding: 0 1rem;
+
+    &__desktop {
+      display: none;
+    }
+
+    &__menu-toggle {
+      display: inline-flex;
     }
   }
 }

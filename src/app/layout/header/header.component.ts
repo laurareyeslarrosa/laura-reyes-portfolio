@@ -16,6 +16,7 @@ export class HeaderComponent {
   readonly isDark = signal(this.themeService.isDark());
   readonly currentLang = this.i18n.lang;
   readonly headerContent = computed(() => this.i18n.dictionary().header);
+  readonly isMenuOpen = signal(false);
 
   toggleTheme(): void {
     this.themeService.toggle();
@@ -24,5 +25,13 @@ export class HeaderComponent {
 
   changeLanguage(): void {
     this.i18n.setLang(this.currentLang() === 'es' ? 'en' : 'es');
+  }
+
+  toggleMenu(): void {
+    this.isMenuOpen.set(!this.isMenuOpen());
+  }
+
+  closeMenu(): void {
+    this.isMenuOpen.set(false);
   }
 }
