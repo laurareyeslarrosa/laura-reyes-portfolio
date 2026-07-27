@@ -60,7 +60,22 @@
     "github": "GitHub",
     "cvES": "Currículum (Español)",
     "cvEN": "Currículum (Inglés)",
-    "note": "Gracias por llegar hasta acá. Este portfolio fue diseñado y desarrollado desde cero con Angular, TypeScript, SASS y mucho (demasiado) mate. Espero que hayas disfrutado recorrerlo tanto como yo disfruté construirlo."
+    "note": "Gracias por llegar hasta acá. Este portfolio fue diseñado y desarrollado desde cero con Angular, TypeScript, SASS y mucho (demasiado) mate. Espero que hayas disfrutado recorrerlo tanto como yo disfruté construirlo.",
+    "contactMail": "Envíame un mensaje",
+    "contactDescription": "¿Tienes una oportunidad, una idea o simplemente quieres saludar? Estaré encantada de leerte. Suelo responder dentro de las 24 horas.",
+    "nameLabel": "Nombre",
+    "emailLabel": "Tu email",
+    "messageLabel": "Mensaje",
+    "submitButton": "Enviar mensaje",
+    "sending": "Enviando...",
+    "success": "✅ ¡Mensaje enviado! Te responderé pronto.",
+    "error": "❌ Hubo un error al enviar. Por favor, intenta de nuevo o escríbeme directamente a",
+    "nameRequired": "El nombre es requerido",
+    "nameMinLength": "Mínimo 2 caracteres",
+    "emailRequired": "El email es requerido",
+    "emailInvalid": "Ingresa un email válido",
+    "messageRequired": "El mensaje es requerido",
+    "messageMinLength": "Mínimo 10 caracteres"
   },
   "header": {
     "about": "Sobre mí",
